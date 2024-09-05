@@ -1,7 +1,11 @@
+import LandingPage from "./components/LandingPage";
+import Navbar from "./components/Navbar";
 
 function App() {
-    return(
-        <h1> HEllo</h1>
+    return(<>
+        <Navbar/>
+        <LandingPage />
+        </>
     )
 }
 
