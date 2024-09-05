@@ -1,7 +1,13 @@
+import Login from "./Credentials/Login";
+import SignUp from "./Credentials/Signup";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
     return(
-        <h1> HEllo</h1>
+        <>
+        <SignUp/>
+        {/* <Login/> */}
+        </>
     )
 }
 
