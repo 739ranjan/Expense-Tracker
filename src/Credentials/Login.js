@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import Logo from '../images/Logo.jpg';
+
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -62,17 +65,17 @@ const Login = () => {
           </form>
 
           <p className="text-center mt-4 text-sm md:text-base">
-            Didn't Have an Account?{' '}
-            <a href="/login" className="text-[#6A7FB6] hover:underline">
-              Login
-            </a>
+             Have an Account?{' '}
+            <Link to="/Signup" className="text-[#6A7FB6] hover:underline">
+              Signup
+            </Link>
           </p>
         </div>
 
         {/* Right Section: Image */}
         <div className="hidden md:flex md:w-1/2 p-6 md:p-8 lg:p-10">
           <img 
-            src="https://via.placeholder.com/400" // Replace with the image URL you want
+            src={Logo} // Replace with the image URL you want
             alt="SignUp Illustration"
             className="w-full h-full object-cover"
           />

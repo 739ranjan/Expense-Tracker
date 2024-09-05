@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiCloseLargeLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
+import Logo from "../images/Logo.jpg"
 
 const Newbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,11 +15,11 @@ const Newbar = () => {
     <nav className="bg-white border-gray-200 py-3 dark:bg-gray-900 shadow-sm">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-1 mx-auto">
         {/* Logo section */}
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           {/* remove border */}
-          <img src="logo.jpg" className="h-7 ml-5 mr-3 sm:h-9  border" alt="Logo" />
+          <img src={Logo} className="h-7 ml-5 mr-3 sm:h-9  border" alt="Logo" />
           <span className="text-2xl font-semibold dark:text-white">Expense Tracker</span>
-        </a>
+        </Link>
 
         {/* Mobile menu button */}
         <button
@@ -86,12 +88,11 @@ const Newbar = () => {
         </div>
 
         {/* Sign Up button */}
-        <a
-          href="#"
+       <Link to="/Signup"
           className="hidden lg:inline-block text-white font-medium bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg text-md px-5 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
         >
           Sign Up
-        </a>
+        </Link>
       </div>
     </nav>
   );

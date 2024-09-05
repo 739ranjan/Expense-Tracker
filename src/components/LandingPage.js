@@ -1,5 +1,6 @@
 import styles from './landingpage.module.css';
-import dashboardImage from '../images/landing-1.jpg'
+import dashboardImage from '../images/landing-1.jpg';
+import { Link } from 'react-router-dom';
 const LandingPage = () => {
     return (
         <div className={`${styles.landing_bg}`}>
@@ -12,7 +13,8 @@ const LandingPage = () => {
                     Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
                     versions of Lorem Ipsum.
                 </p>
-                <button className="text-white font-medium bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg text-md px-5 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800 mt-5">Try Now</button>
+                <Link to="\Signup">
+                <button className="text-white font-medium bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg text-md px-5 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800 mt-5">Try Now</button></Link>
                 <img src={dashboardImage} className="my-[100px] h-[500px]" alt="landing-img-1" />
             </div>
         </div>
