@@ -10,7 +10,7 @@ const Newbar = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200 py-3 dark:bg-gray-900 shadow-xl">
+    <nav className="bg-white border-gray-200 py-3 dark:bg-gray-900 shadow-sm">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-1 mx-auto">
         {/* Logo section */}
         <a href="#" className="flex items-center">
