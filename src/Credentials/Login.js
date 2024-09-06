@@ -17,7 +17,7 @@ const Login = () => {
   return (
     <>
     <Navbar />
-    <div className="flex justify-center items-center min-h-screen bg-[#6A7FB6]">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-b from-gray-700 to-blue-500">
       <div className="bg-white rounded-lg shadow-lg flex flex-col md:flex-row w-full md:w-3/4 lg:w-2/3">
         
         {/* Left Section: Form */}
@@ -25,7 +25,7 @@ const Login = () => {
           <h2 className="text-xl md:text-2xl font-bold text-center mb-4 md:mb-6">Log in</h2>
 
           <button
-            className="w-full bg-[#6A7FB6] text-white py-2 px-4 rounded-lg mb-4 flex justify-center items-center text-sm md:text-base"
+            className="w-full bg-blue-900 text-white py-2 px-4 rounded-lg mb-4 flex justify-center items-center text-sm md:text-base"
           >
             <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google Icon" className="mr-2" />
             Login with Google
@@ -61,7 +61,7 @@ const Login = () => {
 
             <button
               type="submit"
-              className="w-full bg-[#6A7FB6] text-white py-2 px-4 rounded-lg hover:bg-[#5b6ca4] transition-colors text-sm md:text-base"
+              className="w-full bg-blue-900 font-bold tracking-wide text-white py-2 px-4 rounded-lg hover:bg-[#5b6ca4] transition-colors text-sm md:text-base"
             >
               Login
             </button>
@@ -69,7 +69,7 @@ const Login = () => {
 
           <p className="text-center mt-4 text-sm md:text-base">
              Have an Account?{' '}
-            <Link to="/signup" className="text-[#6A7FB6] hover:underline">
+            <Link to="/signup" className="text-blue-900 hover:underline">
               Signup
             </Link>
           </p>

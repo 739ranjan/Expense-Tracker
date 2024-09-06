@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const Create = () => {
+
+    const dateLimit = new Date();
     return(
         <div className="flex flex-col items-center justify-center pt-2 pb-12">
             <h1 className="text-3xl font-bold text-green-600">Create New Transaction</h1>
@@ -38,7 +42,7 @@ const Create = () => {
                     </div>
                     <div>
                         <button
-                            className="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none">
+                            className="hover:shadow-form w-full rounded-md bg-green-800 py-3 px-8 text-center text-base font-bold text-white outline-none tracking-wide hover:bg-green-600 hover:text-blue-900">
                             Add Transaction
                         </button>
                     </div>

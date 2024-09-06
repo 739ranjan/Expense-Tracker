@@ -3,7 +3,7 @@ import { AiOutlineLogout } from "react-icons/ai";
 import { IoNotificationsOutline, IoSettingsOutline } from "react-icons/io5";
 import { FaUserAlt } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
-import { IoIosCreate } from "react-icons/io";
+import { FaRegSquarePlus } from "react-icons/fa6";
 import { GrTransaction } from "react-icons/gr";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { Link, Outlet } from "react-router-dom";
@@ -35,7 +35,7 @@ const Sidebar = () => {
                             </Link>
                             <Link to="/home/create"
                                 className="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl">
-                                <span className="text-2xl"><IoIosCreate /></span>
+                                <span className="text-2xl"><FaRegSquarePlus /></span>
                                 <span className=" ml-2 text-lg">Create</span>
                             </Link>
                             <Link to="/home/transaction"
