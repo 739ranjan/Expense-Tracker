@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import Logo from '../images/Logo.jpg';
-
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -14,6 +15,8 @@ const Login = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="flex justify-center items-center min-h-screen bg-[#6A7FB6]">
       <div className="bg-white rounded-lg shadow-lg flex flex-col md:flex-row w-full md:w-3/4 lg:w-2/3">
         
@@ -66,7 +69,7 @@ const Login = () => {
 
           <p className="text-center mt-4 text-sm md:text-base">
              Have an Account?{' '}
-            <Link to="/Signup" className="text-[#6A7FB6] hover:underline">
+            <Link to="/signup" className="text-[#6A7FB6] hover:underline">
               Signup
             </Link>
           </p>
@@ -82,6 +85,8 @@ const Login = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

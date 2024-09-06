@@ -16,7 +16,6 @@ const Newbar = () => {
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-1 mx-auto">
         {/* Logo section */}
         <Link to="/" className="flex items-center">
-          {/* remove border */}
           <img src={Logo} className="h-7 ml-5 mr-3 sm:h-9  border" alt="Logo" />
           <span className="text-2xl font-semibold dark:text-white">Expense Tracker</span>
         </Link>
@@ -40,33 +39,9 @@ const Newbar = () => {
         <div className={`w-full lg:flex lg:items-center lg:w-auto ${isMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
           <ul className="flex flex-col lg:flex-row lg:space-x-8 font-medium">
             <li>
-              <a href="#" className="text-purple-700 text-lg lg:text-purple-700 dark:text-white py-2 px-.5 block">
+              <Link to="/" className="text-purple-700 text-lg lg:text-purple-700 dark:text-white py-2 px-.5 block">
                 Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-700 hover:text-purple-700 text-lg dark:text-gray-400 dark:hover:text-white py-2 px-.5 block"
-              >
-                Transactions
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-700 hover:text-purple-700 text-lg dark:text-gray-400 dark:hover:text-white py-2 px-.5 block"
-              >
-                Create New
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-700 hover:text-purple-700 text-lg dark:text-gray-400 dark:hover:text-white py-2 px-.5 block"
-              >
-                Compare
-              </a>
+              </Link>
             </li>
             <li>
               <a
@@ -87,12 +62,18 @@ const Newbar = () => {
           </ul>
         </div>
 
-        {/* Sign Up button */}
-       <Link to="/Signup"
-          className="hidden lg:inline-block text-white font-medium bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg text-md px-5 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
-        >
-          Sign Up
-        </Link>
+        {/* Sign Up Login button */}
+
+        <div className="space-x-2">
+          
+          <Link to="/login"
+            className="hidden lg:inline-block text-black font-medium hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg text-md px-5 py-2 hover:text-white ">Login</Link>
+          <Link to="/signup"
+            className="hidden lg:inline-block text-white font-medium bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg text-md px-5 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
+          >
+            Sign Up
+          </Link>
+        </div>
       </div>
     </nav>
   );
