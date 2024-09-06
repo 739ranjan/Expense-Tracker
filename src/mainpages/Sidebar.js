@@ -54,9 +54,11 @@ const Sidebar = () => {
                 </div>
             </div>
                 
-            {/* top nav */}
+            
             <div className="flex flex-col flex-1 overflow-y-auto">
-                <div className="flex items-center justify-between h-16 bg-white border-b border-gray-200">
+
+                {/* top nav */}
+                <div className="flex items-center justify-between py-3 bg-white border-b border-gray-200">
                     <div className="flex items-center px-4">
                 
                         <div className="relative mx-auto text-gray-600">
@@ -89,7 +91,6 @@ const Sidebar = () => {
                 {/* content component */}
                 <div className="p-4">
                     <Outlet />
-                    hello user
                 </div>
             </div>
                 
