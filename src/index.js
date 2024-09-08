@@ -22,6 +22,7 @@ const router = createBrowserRouter([
     {path: '/signup', element: <SignUp />},
     {path: '/home', element:<Sidebar />, children:[
         {path: '/home/profile', element:<UserProfile />},
+        {path: '/home', element:<Dashboard />},
         {path: '/home/dashboard', element:<Dashboard />},
         {path: '/home/create', element: <Create />},
         {path: '/home/transaction', element: <Transaction />},
