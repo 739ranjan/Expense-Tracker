@@ -22,30 +22,28 @@ const LandingPage = () => {
                     Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
                     versions of Lorem Ipsum.
                 </p>
-                <Link to="\signup">
-                <button className="text-white font-medium bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg text-md px-5 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800 mt-5">Try Now</button>
-                </Link>
+                <Link to="/signup" className="hidden lg:inline-block text-white font-medium bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 rounded-lg text-md px-5 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"> Try Now </Link>
                 <img src={dashboardImage} className="my-[100px] max-h-[520px] px-5" alt="landing-img-1" />
             </div>
             <div className='flex flex-wrap justify-center items-center lg:w-[70%] md:w-[70%] m-auto'>
                 <div className='w-[400px] bg-white rounded p-5 shadow-sm m-5'>
                     <p className='text-3xl flex mb-4'>
                         <MdOutlineDashboard />
-                        <h2 className='font-bold ml-5'>Dashboard</h2>
+                        <span className='font-bold ml-5'>Dashboard</span>
                         </p>
                     <p className='leading-7 text-justify'>Track and manage your expenses effortlessly with our intuitive dashboard. Get real-time insights into your spending patterns with customizable charts and detailed reports. Stay on top of your budget with easy-to-use tools designed to simplify your financial life.</p>
                 </div>
                 <div className='w-[400px] bg-white rounded p-5 shadow-sm m-5'>
                     <p className='text-3xl flex mb-4'>
                         <TbTransactionRupee />
-                        <h2 className='font-bold ml-5'>Transactions</h2>
+                        <span className='font-bold ml-5'>Transactions</span>
                         </p>
                     <p className='leading-7 text-justify'>Effortlessly create and update transactions to keep your expenses organized and accurate. Our user-friendly interface allows you to quickly log income and expenses, categorize them, and make adjustments as needed. Stay in control of your finances with seamless transaction management.</p>
                 </div>
                 <div className='w-[400px] bg-white rounded p-5 shadow-sm m-5'>
                     <p className='text-3xl flex mb-4'>
                         <VscGraph />
-                        <h2 className='font-bold ml-5'>Compare</h2>
+                        <span className='font-bold ml-5'>Compare</span>
                         </p>
                     <p className='leading-7 text-justify'>Compare your spending habits over time with advanced features in our expense tracker. Easily view side-by-side comparisons of your monthly or yearly expenses, helping you identify trends and areas for improvement. Make smarter financial decisions with clear, detailed insights at your fingertips.</p>
                 </div>
