@@ -1,5 +1,5 @@
 import styles from './landingpage.module.css';
-import dashboardImage from '../images/landing-1.jpg'
+import dashboardImage from '../images/landing-1.png'
 import { MdOutlineDashboard } from "react-icons/md";
 import { VscGraph } from "react-icons/vsc";
 import { TbTransactionRupee } from "react-icons/tb";
